@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>biodata mahasiswa</title>
+    <style>
+        #header {
+            width: 75%;
+            margin: 20px auto 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #logo {
+            width: 110px;
+            margin-right: 15px;
+        }
+
+        #text-header {
+            text-align: center;
+        }
+
+        #text-header h3 {
+            margin: 0;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        #text-header p {
+            margin: 3px 0;
+            font-style: italic;
+        }
+
+        #garis {
+            width: 75%;
+            margin: 5px auto 15px auto;
+            border-top: 3px solid navy;
+        }
+
+        #judul {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 75%;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 6px 0; 
+        }
+
+        .label {
+            width: 150px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .field {
+            width: 260px;
+            padding: 4px;
+        }
+
+        .textarea {
+            width: 380px;
+            height: 70px;
+            vertical-align: top;
+        }
+
+        .button-area {
+            text-align: center;
+        }
+
+        .btn {
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img id="logo" src="logo_unindra.png">
+        <div id="text-header">
+            <h3>UNIVERSITAS INDRAPRASTA PGRI</h3>
+            <h3>(UNINDRA)</h3>
+            <p>Jl. Nangka No.58 Tanjung Barat - Jaksel</p>
+        </div>
+    </div>
+    <div id="garis"></div>
+
+    <h3 id="judul">BIODATA MAHASISWA</h3>
+    <div class="container">
+
+        <div class="row">
+            <span class="label">NAMA</span> : 
+            <input type="text" class="field">
+        </div>
+
+        <div class="row">
+            <span class="label" style="vertical-align: top;">ALAMAT</span> : 
+            <textarea class="textarea"></textarea>
+        </div>
+
+        <div class="row">
+            <span class="label">TANGGAL LAHIR</span> : 
+            <input type="date" class="field">
+        </div>
+
+        <div class="row">
+            <span class="label">TELP</span> :
+            <input type="text" class="field">
+        </div>
+
+        <div class="row">
+            <span class="label">EMAIL</span> :
+            <input type="email" class="field">
+        </div>
+
+        <div class="button-area">
+            <button class="btn">SIMPAN</button>
+            <button class="btn">BATAL</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
